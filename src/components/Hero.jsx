@@ -33,14 +33,14 @@ const Hero = () => {
         >
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+          annual fee.
         </p>
       </div>
       <div className="flex-1 flex justify-center items-center md:my-0 my-10 relative">
         <img
           src={robot}
           alt="robot"
-          className="w-[100%] h-[100%] relative z-[10] bg-red-700 object-contain lg:ml-96"
+          className="w-[100%] h-[100%] relative z-[10] object-contain lg:ml-96"
         />
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
