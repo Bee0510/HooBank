@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className=" bg-[#00040f] overflow-hidden flex justify-center items-center">
-      <div className="sm:px-16 px-6 justify-center items-center py-0 w-full lg:px-14">
+      <div className="sm:px-16 px-6 justify-center items-center py-0 w-full lg:px-14 ">
         <div className=" xl:max-w-[1280px] w-full">
           <NavBar />
         </div>
