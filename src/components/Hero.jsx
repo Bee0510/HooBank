@@ -40,7 +40,7 @@ const Hero = () => {
         <img
           src={robot}
           alt="robot"
-          className="w-[100%] h-[100%] relative z-[10] object-contain lg:ml-96"
+          className="w-[100%] h-[100%] relative z-[10] lg:ml-96 object-contain"
         />
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
