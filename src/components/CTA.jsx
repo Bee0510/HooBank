@@ -1,7 +1,7 @@
 import React from "react";
 
 const CTA = () => {
-  return <div>wsjhvqddvqed</div>;
+  return <section>qheheq</section>;
 };
 
 export default CTA;
