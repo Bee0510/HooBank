@@ -11,7 +11,7 @@ const Billing = () => {
   return (
     <section
       id="product"
-      className="flex md:flex-row flex-col-reverse sm:py-16 py-6 xl:ml-28 sm:-ml-16 "
+      className="flex md:flex-row flex-col-reverse sm:py-16 py-6 xl:ml-28 sm:-ml-16  "
       data-aos="fade-down-right"
       data-aos-duration="2000"
     >

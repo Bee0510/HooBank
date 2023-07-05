@@ -6,7 +6,7 @@ const Bussiness = () => {
   return (
     <section
       id="features"
-      className="flex md:flex-row flex-col sm:py-16 py-6 sm:-ml-16 lg:ml-44"
+      className="flex md:flex-row flex-col sm:py-16 py-6 sm:-ml-16 xl:ml-44 "
     >
       <div className="flex flex-1 justify-center items-start flex-col">
         <h2 className="font-poppins font-semibold xs:text-[48px] text-white xs:leading-[76px] leading-[66px] w-full">

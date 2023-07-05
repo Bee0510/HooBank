@@ -10,7 +10,7 @@ const CardDeal = () => {
       data-aos="fade-down-left"
       data-aos-duration="2000"
     >
-      <div className="flex flex-1 flex-col justify-center items-start sm:ml-0 xl:ml-5">
+      <div className="flex flex-1 flex-col justify-center items-start sm:ml-10 xl:ml-5">
         <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
           Find a better card deal
           <br className=" sm:block hidden" />
@@ -30,7 +30,7 @@ const CardDeal = () => {
         <img
           src={card}
           alt="billing"
-          className="w-[90%] h-[100%] relative z-[5]"
+          className="w-[90%] h-[100%] relative z-[5] sm:w-[100%]"
         />
         <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
         <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
