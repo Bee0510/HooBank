@@ -1,9 +1,19 @@
 import React from "react";
 import { stats } from "../constants";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Stats = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <section className="flex justify-between items-center flex-row flex-wrap sm:mb-20 mb-6 lg:ml-44 sm:-ml-16">
+    <section
+      className="flex justify-between items-center flex-row flex-wrap sm:mb-20 mb-6 lg:ml-44 sm:-ml-16"
+      data-aos="fade-up"
+    >
       {stats.map((stat) => (
         <div
           key={stat.id}
