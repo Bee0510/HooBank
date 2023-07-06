@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "./Button";
 import { features } from "../constants";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Bussiness = () => {
   return (
     <section
       id="features"
       className="flex md:flex-row flex-col sm:py-16 py-6 sm:-ml-16 xl:ml-44 "
+      data-aos="flip-right"
+      data-aos-duration="2000"
+      data-aos-delay="120"
     >
       <div className="flex flex-1 justify-center items-start flex-col">
         <h2 className="font-poppins font-semibold xs:text-[48px] text-white xs:leading-[76px] leading-[66px] w-full">
@@ -31,16 +36,29 @@ const Bussiness = () => {
 };
 
 const FeaturedCard = ({ icon, title, content, index }) => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
     <div
       className={`flex flex-row p-6 rounded-[20px] ${
         index !== features.length - 1 ? "mb-6" : "mb-0"
       } featured-card space-x-3 w-[80%] hover:-translate-x-2 hover:scale-110`}
     >
-      <div className="flex justify-center items-center w-[64px] h-[64px] rounded-full bg-dimBlue sidebar">
+      <div
+        className="flex justify-center items-center w-[64px] h-[64px] rounded-full bg-dimBlue sidebar"
+        data-aos="slide-up"
+        data-aos-delay="150"
+      >
         <img src={icon} alt="stars" className="w-[50%] h-[50%] object-cover" />
       </div>
-      <div className="flex-1 flex flex-col mt-3 busybar">
+      <div
+        className="flex-1 flex flex-col mt-3 busybar"
+        data-aos="slide-down"
+        data-aos-duration="3000"
+        data-aos-delay="400"
+      >
         <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">
           {title}
         </h4>

@@ -9,6 +9,7 @@ const CardDeal = () => {
       className="flex md:flex-row flex-col sm:py-16 py-6 xl:ml-28 sm:-ml-16 xl:p-3"
       data-aos="fade-down-left"
       data-aos-duration="2000"
+      data-aos-delay="120"
     >
       <div className="flex flex-1 flex-col justify-center items-start sm:ml-10 xl:ml-5">
         <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">

@@ -11,8 +11,10 @@ const Stats = () => {
   }, []);
   return (
     <section
-      className="flex justify-between items-center flex-row flex-wrap sm:mb-20 mb-6 lg:ml-44 sm:-ml-16"
+      className="flex justify-between items-center flex-row flex-wrap sm:mb-20 mb-6 xl:ml-44 sm:-ml-16"
       data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="120"
     >
       {stats.map((stat) => (
         <div

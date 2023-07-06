@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { clients } from "../constants";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Clients = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
-    <section className="flex justify-center items-center my-4">
-      <div className="flex justify-center items-center my-4 flex-wrap w-full p-4 mt-0">
+    <section
+      className="flex justify-center items-center my-4"
+      data-aos="slide-left"
+      data-aos-duration="5000"
+      data-aos-delay="120"
+    >
+      <div className="flex justify-center items-center my-4 flex-wrap w-full p-4 mt-0 gap-10 xl:max-w-[1300px]">
         {clients.map((client) => (
           <div
             key={client.id}

@@ -11,7 +11,7 @@ const NavBar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`cursor-pointer font-poppins font-bold text-[16px] ${
+            className={`cursor-pointer font-poppins font-bold text-[16px] hover:text-[#00f6ff]  ${
               active == nav.title ? "text-blue-700" : "text-gray-400"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}

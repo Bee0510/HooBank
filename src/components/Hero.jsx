@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section
       id="home"
-      className={` flex md:flex-row flex-col sm:py-12 py-6 lg:ml-64 mt-3 xl:mt-24`}
+      className={` flex md:flex-row flex-col sm:py-12 py-6 xl:ml-64 mt-3 xl:mt-24`}
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="120"
     >
       <div className="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-0  px-6">
         <div className=" flex flex-row items-center py-[6px] px-4 rounded-[10px] mb-2 bg-gradient-to-r from-gray-800 to-gray-900">

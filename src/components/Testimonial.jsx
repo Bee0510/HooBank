@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { feedback } from "../constants";
 import FeedbackCard from "./FeedbackCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section
       id="clients"
       className="sm:py-16 py-6 justify-center items-center flex-col relative xl:ml-12 -ml-14"
+      data-aos="flip-up"
+      data-aos-duration="2000"
     >
       <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
       <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] ml-24 gap-x-24">
