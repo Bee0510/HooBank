@@ -59,6 +59,9 @@ const Footer = () => {
         <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
           Copyright Ⓒ 2023 HooBank. All Rights Reserved.
         </p>
+        <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+          VISHAL BEHERA
+        </h4>
         <div className="flex flex-row md:mt-6 mt-0 sm:my-6">
           {socialMedia.map((social, index) => (
             <img
