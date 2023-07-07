@@ -17,7 +17,7 @@ const Testimonial = () => {
       data-aos-duration="2000"
     >
       <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
-      <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] ml-24 gap-x-24">
+      <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] ml-10 sm:ml-24 gap-x-24">
         <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
           What People are <br className="sm:block hidden" /> saying about us
         </h2>

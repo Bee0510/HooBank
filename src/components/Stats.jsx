@@ -19,7 +19,7 @@ const Stats = () => {
       {stats.map((stat) => (
         <div
           key={stat.id}
-          className="flex-1 flex justify-start items-center flex-row m-3 statbar"
+          className="flex-1 flex justify-start items-center flex-row m-3 statbar max-h-10"
         >
           <h4 className="font-poppins font-semibold xs:text-[40px] xs:leading-[53px] leading-[43] text-white">
             {stat.value}
