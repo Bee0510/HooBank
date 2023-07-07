@@ -30,7 +30,7 @@ const NavBar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-gradient-to-t from-gray-400 to-slate-800 absolute top-20 right-1 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-gradient-to-t from-gray-400 to-slate-800 sticky top-20 right-1 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className=" list-none justify-center items-center flex-col">
             {navLinks.map((nav, index) => (

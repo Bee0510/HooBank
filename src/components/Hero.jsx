@@ -28,7 +28,8 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="font-poppins font-semibold sm:text-[72px] text-[52px] text-white sm:leading-[100px]">
             The Next <br className=" sm:block hidden" />{" "}
-            <span className="text-gradient">Generation </span> <br />
+            <span className="text-gradient">Genesys</span>
+            <br />
           </h1>
           <div className=" sm:flex hidden md:mr-16 lg:ml-16 mt-2">
             <GetStarted />
@@ -55,7 +56,7 @@ const Hero = () => {
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
       </div>
-      <div className=" ss:hidden justify-center items-center">
+      <div className="hidden justify-center items-center">
         <GetStarted />
       </div>
     </section>
